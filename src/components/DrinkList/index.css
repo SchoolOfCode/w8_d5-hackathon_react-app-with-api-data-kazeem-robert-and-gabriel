@@ -4,11 +4,11 @@ img {
   border: 2px solid black;
 }
 
-img:hover {
-  transform: scale(1.1);
+/* img:hover {
+  transform: scale(1.1); // messed up ingredients list view
   position: relative;
   bottom: -10px;
-}
+} */
 
 li {
   list-style: none;
