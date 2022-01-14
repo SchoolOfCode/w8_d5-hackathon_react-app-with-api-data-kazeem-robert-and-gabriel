@@ -55,6 +55,7 @@ function DrinkList({ name, image, id }) {
                 {selectedDrinkProperties.strIngredient7}
               </li>
             </ul>
+            <br></br>
             {selectedDrinkProperties.strInstructions}
           </div>
         </li>
