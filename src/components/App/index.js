@@ -12,10 +12,18 @@ function App() {
       `https://www.thecocktaildb.com/api/json/v1/1/filter.php?i=${drink}` // use string interpolation to insert the searched drink into the API url
     );
     const data = await response.json();
-    setDrink(data.drinks);
-    console.log(data.drinks)
+    const fetchedArray = data.drinks
+    setDrink(fetchedArray);
+    console.log(fetchedArray)
+    
+    const idArray = []
+    fetchedArray.forEach((item)=>{ return idArray.push(Number(item.idDrink))})
+    console.log(idArray)
+   
+
   }
 
+// idDrink;
 
   // useEffect to run the function every time a new search is made
   useEffect(() => {
@@ -26,8 +34,11 @@ function App() {
   return (
     <div className="App">
       <Input onSubmit={fetchData} />
-      {drink.map((item)=>{return <DrinkList name={item.strDrink} image={item.strDrinkThumb} />;})}
-     
+      <div className="drink-display">
+        {drink.map((item, index) => {
+          return <DrinkList name={item.strDrink} image={item.strDrinkThumb} key={index}/>;
+        })}
+      </div>
     </div>
   );
 }
