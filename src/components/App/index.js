@@ -15,7 +15,7 @@ function App() {
     );
     const data = await response.json();
     const fetchedArray = data.drinks;
-    setDrink(fetchedArray.splice(0,6));
+    setDrink(fetchedArray.splice(0,10));
     console.log(fetchedArray);
 
     const idArray = [];
