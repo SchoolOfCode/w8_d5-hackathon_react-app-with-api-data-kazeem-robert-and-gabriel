@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import "./App.css";
 import Input from "../Input";
 import DrinkList from "../DrinkList";
-import { DrinkInst } from "../DrinkList";
+import Header from "../Header";
 
 function App() {
   // set the state
@@ -36,6 +36,7 @@ function App() {
 
   return (
     <div className="App">
+    <Header/>
       <Input onSubmit={fetchData} />
       <div className="drink-display">
         {drink.map((item, index) => {

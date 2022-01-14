@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from "react";
+import "./index.css";
 
 // create function to take in an input submitted by the user
 function Input({ onSubmit }) {
@@ -19,8 +20,8 @@ function Input({ onSubmit }) {
 
   return (
     <form>
-      <input onChange={getValue} placeholder="Enter drink here" />
-      <button onClick={SearchApI}>Search</button>
+      <input onChange={getValue} placeholder="Enter drink here 🥃" />
+      <button onClick={SearchApI}>Search 🔍</button>
     </form>
   );
 }
