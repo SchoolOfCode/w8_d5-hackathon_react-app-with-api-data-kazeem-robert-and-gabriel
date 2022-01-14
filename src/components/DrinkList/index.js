@@ -1,13 +1,13 @@
 import React from "react";
 
-import Input from "../Input";
+// import Input from "../Input";
 
 function DrinkList({ name, image }) {
   return (
     <div>
       <ul>
         <li>
-          {name} <img src={image} alt=""/>
+          {name} <img src={image} alt="" />
         </li>
       </ul>
     </div>
