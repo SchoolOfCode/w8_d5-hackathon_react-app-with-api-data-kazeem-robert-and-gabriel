@@ -34,4 +34,6 @@ PLAN
 -> When you search for a cocktail it brings it up.
            -> We display the name and the picture of each of them. (name, image)
            -> When they select whhich one they want we can display more details about them. (ingredients, measures, instructions)
+           
+           If times allows, add a second page using react router where you could see the specific drink you want displayed in more detail (picture, ingredients, instructions)
 
