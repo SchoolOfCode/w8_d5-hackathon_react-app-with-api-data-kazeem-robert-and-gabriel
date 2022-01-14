@@ -1,4 +1,5 @@
 import React from "react";
+import "./index.css";
 
 // import Input from "../Input";
 
@@ -7,9 +8,9 @@ function DrinkList({ name, image }) {
     <div>
       <ul>
         <li>
-          {name}<br></br> <img src={image} alt="" className="imag-1"/>
+          {name}
+          <br></br> <img src={image} alt="" />
         </li>
-       
       </ul>
     </div>
   );
@@ -19,9 +20,7 @@ export function DrinkInst({ alcohol }) {
   return (
     <div>
       <ul>
-        <li>
-          {alcohol} 
-        </li>
+        <li>{alcohol}</li>
       </ul>
     </div>
   );
