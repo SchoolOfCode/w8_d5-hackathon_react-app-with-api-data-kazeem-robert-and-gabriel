@@ -1,12 +1,12 @@
-import React from 'react';
+import React from "react";
 
-import './index.css';
+import "./index.css";
 
 //this is to make a header
 function Header() {
   return (
     <header>
-      <h1 className="mainTitle">🍷 Fancy a drink? 🥂</h1>
+      <h1 className="mainTitle">🍷 Fancy a drink? Yes 🥂</h1>
     </header>
   );
 }
