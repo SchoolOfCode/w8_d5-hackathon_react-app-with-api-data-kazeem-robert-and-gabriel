@@ -1,9 +1,9 @@
 img {
   height: 200px;
   width: auto;
-  border: 2px solid black
+  border: 2px solid black;
 }
 
-li{
- list-style: none;
+li {
+  list-style: none;
 }

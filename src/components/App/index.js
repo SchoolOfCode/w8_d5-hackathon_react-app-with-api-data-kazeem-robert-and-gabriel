@@ -15,11 +15,11 @@ function App() {
     );
     const data = await response.json();
     const fetchedArray = data.drinks;
-    setDrink(fetchedArray.splice(0,10));
+    setDrink(fetchedArray.splice(0, 10));
     console.log(fetchedArray);
 
     const idArray = [];
-    fetchedArray.splice(0,10).forEach((item) => {
+    fetchedArray.splice(0, 10).forEach((item) => {
       return idArray.push(Number(item.idDrink));
     });
     console.log(idArray);
@@ -27,6 +27,8 @@ function App() {
 
   // console.log("hh",inst[0][0])
   // idDrink;
+
+  //https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i=${}
 
   // useEffect to run the function every time a new search is made
   useEffect(() => {
@@ -36,7 +38,7 @@ function App() {
 
   return (
     <div className="App">
-    <Header/>
+      <Header />
       <Input onSubmit={fetchData} />
       <div className="drink-display">
         {drink.map((item, index) => {
@@ -44,6 +46,7 @@ function App() {
             <DrinkList
               name={item.strDrink}
               image={item.strDrinkThumb}
+              id={item.idDrink}
               key={index}
             />
           );

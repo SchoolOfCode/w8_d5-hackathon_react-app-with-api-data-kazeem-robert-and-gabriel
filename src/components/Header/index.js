@@ -6,7 +6,7 @@ import "./index.css";
 function Header() {
   return (
     <header>
-      <h1 className="mainTitle">🍷 Fancy a drink? Yes 🥂</h1>
+      <h1 className="mainTitle">🍷 Fancy a drink? 🥂</h1>
     </header>
   );
 }
