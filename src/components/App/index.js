@@ -7,7 +7,6 @@ import { DrinkInst } from "../DrinkList";
 function App() {
   // set the state
   const [drink, setDrink] = useState([]);
-  const [inst, setInst] = useState([]);
 
   // write an async function to get data from cocktails
   async function fetchData(drink) {
