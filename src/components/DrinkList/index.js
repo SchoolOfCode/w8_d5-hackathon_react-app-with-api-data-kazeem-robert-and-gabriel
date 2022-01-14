@@ -6,9 +6,8 @@ function DrinkList({ name, image }) {
   return (
     <div>
       <ul>
-        <li>{name}</li>
         <li>
-          <img src={image} />
+          {name} <img src={image} alt="drink"/>
         </li>
       </ul>
     </div>
