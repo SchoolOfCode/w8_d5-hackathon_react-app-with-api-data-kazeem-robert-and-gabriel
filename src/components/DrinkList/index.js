@@ -17,6 +17,7 @@ function DrinkList({ name, image, id }) {
     setSelectedDrinkProperties(data.drinks[0]);
     console.log(data.drinks[0]);
   }
+
   return (
     <div>
       <ul>

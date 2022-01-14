@@ -4,6 +4,12 @@ img {
   border: 2px solid black;
 }
 
+img:hover {
+  transform: scale(1.1);
+  position: relative;
+  bottom: -10px;
+}
+
 li {
   list-style: none;
 }
