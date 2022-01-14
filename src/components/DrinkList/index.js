@@ -7,7 +7,7 @@ function DrinkList({ name, image }) {
     <div>
       <ul>
         <li>
-          {name}<br></br> <img src={image} alt="" />
+          {name}<br></br> <img src={image} alt="" className="imag-1"/>
         </li>
        
       </ul>

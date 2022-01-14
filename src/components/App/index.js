@@ -15,11 +15,11 @@ function App() {
     );
     const data = await response.json();
     const fetchedArray = data.drinks;
-    setDrink(fetchedArray);
+    setDrink(fetchedArray.splice(0,6));
     console.log(fetchedArray);
 
     const idArray = [];
-    fetchedArray.forEach((item) => {
+    fetchedArray.splice(0,6).forEach((item) => {
       return idArray.push(Number(item.idDrink));
     });
     console.log(idArray);
