@@ -9,6 +9,19 @@ function DrinkList({ name, image }) {
         <li>
           {name} <img src={image} alt="" />
         </li>
+       
+      </ul>
+    </div>
+  );
+}
+
+export function DrinkInst({ alcohol }) {
+  return (
+    <div>
+      <ul>
+        <li>
+          {alcohol} 
+        </li>
       </ul>
     </div>
   );
