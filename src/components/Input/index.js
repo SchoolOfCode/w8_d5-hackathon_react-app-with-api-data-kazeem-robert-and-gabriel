@@ -1,20 +1,25 @@
-import React from 'react'
-import {useState} from "react"
+import React from "react";
+import { useState } from "react";
 
+function Input({ onSubmit }) {
+  const [drink, setDrink] = useState("");
+  function getValue(e) {
+    setDrink(e.target.value);
+    console.log(drink);
+  }
 
-function Input({onSubmit}) {
-    const [drink, setDrink] = useState ("")
-    function getValue(e) {
-        setDrink (e.target.value)
-        console.log(drink)
-    }
-    return (
-        <form>
-        <input onChange={getValue} placeholder='Enter drink here'
-        />
-        <button onClick={()=>{onSubmit(drink)}}>Search</button>
-        </form>
-    )
+  function SearchApI(e) {
+    e.preventDefault();
+
+    onSubmit(drink);
+  }
+
+  return (
+    <form>
+      <input onChange={getValue} placeholder="Enter drink here" />
+      <button onClick={SearchApI}>Search</button>
+    </form>
+  );
 }
 
-export default Input
+export default Input;

@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import "./App.css";
-import Input from "../Input"
+import Input from "../Input";
 
 function App() {
   async function fetchData(drink) {
@@ -15,7 +15,11 @@ function App() {
     fetchData();
   });
 
-  return <div className="App"><Input onSubmit={fetchData}/></div>;
+  return (
+    <div className="App">
+      <Input onSubmit={fetchData} />
+    </div>
+  );
 }
 
 export default App;
