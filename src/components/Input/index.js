@@ -20,7 +20,7 @@ function Input({ onSubmit }) {
 
   return (
     <form>
-      <input onChange={getValue} placeholder="Enter drink here 🥃" />
+      <input onChange={getValue} placeholder="Enter ingredient here 🥃" />
       <button onClick={SearchApI}>Search 🔍</button>
     </form>
   );
