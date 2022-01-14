@@ -19,7 +19,7 @@ function App() {
     console.log(fetchedArray);
 
     const idArray = [];
-    fetchedArray.splice(0,6).forEach((item) => {
+    fetchedArray.splice(0,10).forEach((item) => {
       return idArray.push(Number(item.idDrink));
     });
     console.log(idArray);
