@@ -25,3 +25,15 @@ Focus on what features you are going to build next. Break it down into tasks/tic
 ## Show & Tell @ 16:00
 
 You'll be presenting your apps to each other, and each team member should be prepared to present about their app so an end of day wrap-up is a good idea.
+
+
+
+PLAN
+-> Set up our create reactAPP
+-> Test out the API and ensure it works how we want.
+-> When you search for a cocktail it brings it up.
+           -> We display the name and the picture of each of them. (name, image)
+           -> When they select whhich one they want we can display more details about them. (ingredients, measures, instructions)
+           
+           If times allows, add a second page using react router where you could see the specific drink you want displayed in more detail (picture, ingredients, instructions)
+
