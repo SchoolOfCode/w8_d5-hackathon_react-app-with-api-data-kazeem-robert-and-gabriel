@@ -17,12 +17,6 @@ function App() {
     const fetchedArray = data.drinks;
     setDrink(fetchedArray.splice(0, 10));
     console.log(fetchedArray);
-
-    const idArray = [];
-    fetchedArray.splice(0, 10).forEach((item) => {
-      return idArray.push(Number(item.idDrink));
-    });
-    console.log(idArray);
   }
 
   // console.log("hh",inst[0][0])

@@ -1,5 +1,5 @@
 import React from "react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import "./index.css";
 
 // import Input from "../Input";
@@ -17,6 +17,9 @@ function DrinkList({ name, image, id }) {
     setSelectedDrinkProperties(data.drinks[0]);
     console.log(data.drinks[0]);
   }
+  useEffect(() => {
+    setSelectedDrinkProperties("");
+  }, [name, id]);
 
   return (
     <div>
@@ -25,7 +28,8 @@ function DrinkList({ name, image, id }) {
           {name}
           <br></br>
           <div>
-            <img onClick={handleClick} id={id} src={image} alt="" />
+            <img onClick={handleClick} id={id} src={image} alt="" />{" "}
+            {/* put the id into the image as id having got it from the API in the app}*/}
             <ul id="ingredient-list">
               <li>
                 {selectedDrinkProperties.strMeasure1}
